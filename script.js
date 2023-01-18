@@ -18,6 +18,7 @@ function init() {
     document.getElementById('tip').innerText = `$0.00`;
     BillAmount.value = null;
     NumberOfPerson.value = null;
+    document.querySelector('.customize_btn').value = null;
 }
 
 function keys(value) {
