@@ -1,6 +1,6 @@
 #TIP CALCULATOR
 
-[project link]()
+[https://tipcalculatorsajai.netlify.app/](https://tipcalculatorsajai.netlify.app/)
 
 ###project details
 
