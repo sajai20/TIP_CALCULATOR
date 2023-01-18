@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+    <div class="conatiner_main">
+        <div class="heading">
+            <p>SPLI</p>
+            <p>TTER</p>
+        </div>
+        <div class="container">
+            <div class=" no_background container_sub">
+                <div class="for_pos">
+                    <label for="bill">Bill</label>
+                    <img src="./images/icon-dollar.svg" alt="dollaricon">
+                    <input id="bill" type="text" value="" name="name" placeholder="0">
+                </div>
+                <div>
+                    <label for="name">Select Tip %</label>
+                    <div class="percentage_container">
+                        <button class="btn" id="5" onclick="keys('5')">5%</button>
+                        <button class="btn" id="10" onclick="keys('10')">10%</button>
+                        <button class="btn" id="15" onclick="keys('15')">15%</button>
+                        <button class="btn" id="20" onclick="keys('20')">20%</button>
+                        <button class="btn" id="50" onclick="keys('50')">50%</button>
+                        <input type="text" class="btn customize_btn" placeholder="custom">
+
+                    </div>
+                </div>
+                <div class="for_pos">
+                    <label for="person">No of people</label>
+                    <img src="./images/icon-person.svg" alt="dollaricon">
+                    <input id="person" type="text" value="" name="name" placeholder="0">
+                </div>
+            </div>
+            <div class="container_sub container_height">
+                <div class="container_total">
+                    <div>
+                        <h5>Tip Amount</h5>
+                        <h6>/ person</h6>
+                    </div>
+                    <div>
+                        <p class="para_color" id="tip">$0.00</p>
+                    </div>
+                </div>
+                <div class="container_total container_total_position">
+                    <div>
+                        <h5>Total</h5>
+                        <h6>/ person</h6>
+                    </div>
+                    <div>
+                        <p class="para_color" id="total">$0.00</p>
+                    </div>
+                </div>
+                <div class="container_total">
+                    <button class="rst_btn" id="clear">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

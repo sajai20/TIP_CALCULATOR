@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.para_color {
+    color: var(--strong-cyan);
+    font-size: 40px;
+    padding: 0px;
+    letter-spacing: 0px;
+}
+
+html {
+    font-size: 24px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    background-color: var(--Light-grayish-cyan);
+    width: 100%;
+    min-height: 100vh;
+}
+
+img {
+    width: 10px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.heading {
+    position: relative;
+    top: -50px;
+}
+
+p {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: var(--Dark-grayish-cyan);
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: var(--Dark-grayish-cyan);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    text-align: right;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--Grayish-cyan);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.conatiner_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    min-height: 500px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 20px;
+}
+
+.container_sub.no_background {
+    background-color: var(--White);
+}
+
+.container_sub {
+    width: 46%;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    height: 426px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container_total {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.container_total_position {
+    position: relative;
+    top: -70px;
+}
+
+.percentage_container {
+    margin-top: 20px;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 100px 100px;
+    gap: 0.5rem;
+}
+
+h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--White);
+}
+
+h6 {
+    font-size: 10px;
+    color: var(--Grayish-cyan);
+}
+
+.for_pos {
+    position: relative;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.rst_btn {
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: var(--strong-cyan);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Very-dark-cyan);
+}
+
+.btn.custom {
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Grayish-cyan);
+}
+
+
+@media screen and (max-width : 376px) {
+    .heading {
+        position: relative;
+        top: 50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--White);
+        margin-top: 100px;
+    }
+
+    .container_sub {
+        width: 83%;
+        background-color: var(--Very-dark-cyan);
+        border-radius: 10px;
+        height: 426px;
+    }
+
+    .container_sub.container_height {
+        height: 275px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .container_total_position {
+        position: relative;
+        top: 0px;
+    }
+
+    .percentage_container {
+        margin-top: 20px;
+        display: grid;
+        width: 90%;
+        grid-template-columns: 175px 175px;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 130px;
+        height: 50px;
+    }
+
+}
